@@ -1,0 +1,429 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&subset=devanagari,latin-ext" rel="stylesheet">
+	<title>Hagar Khaled | Social Media Marketer & Content Creator</title>
+	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootsnav.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style>
+		:root {
+			--primary-color: #007bff;
+			--primary-dark: #0056b3;
+			--primary-light: #5dade2;
+			--accent-color: #e74c3c;
+			--text-dark: #2d3436;
+			--text-light: #636e72;
+			--bg-color: #ffffff;
+			--card-bg: #f8f9fa;
+			--border-color: #e9ecef;
+			--success-color: #2ecc71;
+			--shadow-color: rgba(0, 123, 255, 0.12);
+		}
+		[data-theme="dark"] {
+			--primary-color: #007bff;
+			--primary-dark: #0056b3;
+			--primary-light: #5dade2;
+			--accent-color: #e74c3c;
+			--text-dark: #ffffff;
+			--text-light: #dfe6e9;
+			--bg-color: #1e272e;
+			--card-bg: #2d3436;
+			--border-color: #485460;
+			--success-color: #2ecc71;
+			--shadow-color: rgba(0, 123, 255, 0.18);
+		}
+		body { background-color: var(--bg-color); color: var(--text-dark); transition: all 0.3s ease; font-family: 'Poppins', sans-serif; }
+		.theme-switch { position: fixed; top: 20px; right: 20px; z-index: 1000; background: var(--card-bg); border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px var(--shadow-color); }
+		.theme-switch:hover { transform: translateY(-2px); box-shadow: 0 8px 20px var(--shadow-color); }
+		.theme-switch i { color: var(--primary-color); font-size: 24px; transition: all 0.3s ease; }
+	</style>
+<style>
+/* Pro UI refinements */
+:root { --radius: 16px; --radius-lg: 22px; --space: 28px; --space-sm: 16px; }
+html, body { scroll-behavior: smooth; }
+section { padding: 96px 0; }
+@media (max-width: 768px) { section { padding: 72px 0; } }
+
+.navbar { background: rgba(255,255,255,0.85)!important; backdrop-filter: saturate(140%) blur(8px); box-shadow: 0 8px 30px var(--shadow-color); }
+.navbar-brand { color: var(--primary-dark)!important; font-weight: 700; letter-spacing: .3px; }
+.navbar .nav > li > a { color: var(--text-dark)!important; border-radius: 26px; margin: 4px; padding: 10px 16px; transition: .25s; }
+.navbar .nav > li > a:hover, .navbar .nav > li.active > a { background: var(--primary-color); color: #fff!important; }
+
+.welcome-hero { position: relative; min-height: 60vh; }
+.welcome-hero:after { content:''; position:absolute; inset:0; background: radial-gradient(1200px 400px at 90% 10%, rgba(255,255,255,.18), transparent 60%), radial-gradient(900px 300px at 10% 90%, rgba(255,255,255,.15), transparent 60%); pointer-events:none; }
+.header-text h2 { font-size: 44px; letter-spacing:.2px; }
+.header-text p { font-size: 20px; opacity:.95; }
+
+.contact-info { margin-top: 24px; display:flex; flex-wrap:wrap; justify-content:center; gap: 14px; }
+.contact-item { background: rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:10px 16px; border-radius: 999px; color:#fff; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+.contact-item i { margin-right: 8px; color:#ffd166; }
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 18px; }
+
+.section-heading { margin-bottom: 54px; text-align: center; }
+.section-heading h2 { font-size: 34px; font-weight: 800; color: var(--text-dark); display:inline-block; position: relative; padding-bottom: 10px; }
+.section-heading h2:after { content:''; position:absolute; left:50%; transform: translateX(-50%); bottom:0; width: 64%; height:4px; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); border-radius: 2px; }
+
+.about-text, .skill-item, .certification-item { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius); box-shadow: 0 12px 30px var(--shadow-color); padding: 26px 22px; transition: transform .2s ease, box-shadow .2s ease; }
+.about-text:hover, .skill-item:hover, .certification-item:hover { transform: translateY(-4px); box-shadow: 0 18px 38px var(--shadow-color); }
+.about-text h3 { color: var(--primary-dark); font-weight:700; font-size: 22px; margin-bottom: 12px; }
+.about-text p { color: var(--text-light); line-height: 1.85; }
+.about-text .about-photo { width: 260px; height: 260px; border-radius: 50%; box-shadow: 0 12px 28px var(--shadow-color); display: block; margin: 0; object-fit: cover; border: 4px solid #fff; }
+/* Objective two-column card layout */
+.about-card { display: flex; gap: 24px; align-items: center; }
+.about-col { flex: 1 1 0; }
+.about-textual { display: flex; flex-direction: column; gap: 12px; }
+.about-textual h3 { margin: 0 0 8px 0; font-size: 28px; line-height: 1.25; }
+.about-textual p { font-size: 18px; line-height: 1.9; color: var(--text-dark); }
+.about-visual { display: flex; justify-content: flex-end; align-items: center; position: relative; }
+.about-text { background: linear-gradient(180deg, var(--card-bg), var(--card-bg)) padding-box, linear-gradient(135deg, rgba(52,152,219,.25), rgba(231,76,60,.25)) border-box; border:1px solid transparent; }
+.about-textual .about-badge { display:inline-flex; align-items:center; gap:8px; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); color:#fff; border-radius:999px; padding:10px 14px; box-shadow: 0 6px 18px rgba(0,0,0,.08); font-size: 15px; font-weight: 700; letter-spacing:.3px; }
+.about-textual .about-badge i { font-size: 16px; }
+.about-visual::before { content:''; position:absolute; right:-10px; top:50%; transform: translateY(-50%); width: 240px; height: 240px; background: radial-gradient(closest-side, rgba(0,123,255,.28), rgba(0,0,0,0)); border-radius: 50%; filter: blur(8px); z-index:0; }
+.about-text .about-photo { z-index: 1; }
+@media (max-width: 768px) {
+	.about-card { flex-direction: column; }
+	.about-visual { justify-content: center; }
+	.about-text .about-photo { width: 200px; height: 200px; }
+	.about-textual h3 { font-size: 24px; }
+	.about-textual p { font-size: 16.5px; }
+}
+
+.skills .row { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
+.skill-item { text-align:center; min-width: 200px; max-width: 280px; }
+.skill-item i { font-size: 34px; color: var(--primary-color); margin-bottom: 12px; }
+.skill-item h3 { font-size: 15px; margin: 0; color: var(--text-dark); }
+
+.timeline { position: relative; margin-top: 8px; }
+.timeline:before { content:''; position: absolute; left: 12px; top: 0; bottom: 0; width: 3px; background: linear-gradient(var(--primary-light), var(--primary-dark)); border-radius: 2px; }
+.timeline-item { position: relative; margin-left: 44px; margin-bottom: 26px; padding: 14px 16px 10px 16px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius); box-shadow: 0 8px 22px var(--shadow-color); }
+.timeline-item:before { content:''; position: absolute; left: -38px; top: 18px; width: 18px; height: 18px; border-radius: 50%; background: #fff; border:3px solid var(--primary-color); box-shadow: 0 0 0 6px rgba(0,123,255,.12); }
+.timeline-date { font-size: 13px; color: var(--primary-color); font-weight: 700; letter-spacing: .3px; margin-bottom: 6px; }
+.timeline-title { font-size: 18px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+.timeline-subtitle { font-size: 14px; color: var(--primary-dark); margin-bottom: 8px; font-weight: 600; }
+.timeline-text ul { padding-left: 18px; margin: 0; }
+.timeline-text li { color: var(--text-light); margin-bottom: 6px; }
+
+.certification-item h3 { font-size: 17px; margin-bottom: 2px; }
+.certification-item .provider { color: var(--primary-color); font-weight: 600; }
+
+.portfolio-details { padding-top: 8px; }
+.portfolio .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px; }
+.portfolio-item { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: #fff; box-shadow: 0 12px 28px var(--shadow-color); transform: translateZ(0); }
+.portfolio-item img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.portfolio-item a::after { content: 'View'; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.0), rgba(0,0,0,.45)); color: #fff; font-weight: 600; letter-spacing: .4px; display: grid; place-items: end center; padding-bottom: 14px; opacity: 0; transition: opacity .25s ease; }
+.portfolio-item:hover a::after { opacity: 1; }
+
+/* Portfolio cards */
+.portfolio-card { position: relative; background: var(--card-bg); border:1px solid var(--border-color); border-radius: var(--radius); box-shadow: 0 10px 26px var(--shadow-color); padding: 24px 20px; min-height: 220px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start; transition: transform .25s ease, box-shadow .25s ease; color: var(--text-dark); }
+.portfolio-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px var(--shadow-color); }
+.portfolio-card h3 { margin: 0; font-size: 20px; font-weight: 700; color: var(--text-dark); }
+.pc-icon { width: 48px; height: 48px; border-radius: 12px; display:flex; align-items:center; justify-content:center; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); color:#fff; box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+.pc-icon i { font-size: 22px; }
+.portfolio-card .btn-view { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; padding: 12px 16px; border-radius: 999px; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); color: #fff; font-weight: 700; text-decoration: none; letter-spacing: .2px; box-shadow: 0 6px 16px rgba(0,0,0,.25); font-size: 14.5px; }
+.portfolio-card .btn-view:hover { filter: brightness(1.05); }
+
+.footer-copyright { margin-top: 56px; background: var(--card-bg); border-top: 1px solid var(--border-color); }
+
+#scroll-Top .return-to-top { background: var(--primary-color); border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; color: #fff; position: fixed; bottom: 26px; right: 22px; box-shadow: 0 10px 22px var(--shadow-color); }
+#scroll-Top .return-to-top:hover { background: var(--accent-color); transform: translateY(-2px); }
+@media (max-width: 480px) { .header-text h2 { font-size: 32px; } .header-text p { font-size: 18px; } }
+</style>
+</head>
+<body>
+	<div class="theme-switch" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+		<i class="fas fa-moon"></i>
+	</div>
+
+	<header class="top-area">
+		<div class="header-area">
+			<nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<a class="navbar-brand" href="#welcome-hero">
+							<i class="fas fa-bullhorn"></i> Hagar Khaled
+						</a>
+					</div>
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class="smooth-menu active"><a href="#welcome-hero"><i class="fas fa-home"></i> Home</a></li>
+							<li class="smooth-menu"><a href="#about"><i class="fas fa-user"></i> About</a></li>
+							<li class="smooth-menu"><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+							<li class="smooth-menu"><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+							<li class="smooth-menu"><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+							<li class="smooth-menu"><a href="#portfolio"><i class="fas fa-file-alt"></i> Portfolio</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="clearfix"></div>
+	</header>
+
+	<section id="welcome-hero" class="welcome-hero" style="padding:120px 0; background-image: linear-gradient(135deg, rgba(0, 123, 255, 0.65) 0%, rgba(0, 86, 179, 0.65) 100%), url('assets/images/hero/theregisti-ziSzilQLSOM-unsplash.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="header-text">
+						<h2>Hagar Khaled</h2>
+						<p>Social Media Marketer & Content Creator</p>
+						<div class="contact-info">
+							<div class="contact-item">
+								<i class="fas fa-phone"></i>
+								<span>01148522210</span>
+							</div>
+							<div class="contact-item">
+								<i class="fas fa-envelope"></i>
+								<span>zahramahrous24@gmail.com</span>
+							</div>
+							<div class="contact-item">
+								<i class="fas fa-map-marker-alt"></i>
+								<span>Giza – Omraneya, Egypt</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="section-heading text-center">
+			<h2><i class="fas fa-user"></i> Objective</h2>
+		</div>
+		<div class="container">
+			<div class="about-content">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="about-text">
+							<div class="about-card">
+								<div class="about-col about-textual">
+									<h3><span class="about-badge"><i class="fas fa-bullseye"></i> Objective</span></h3>
+									<p>Social Media marketer and Content Creator seeking to improve my skills, work with copywriters and designers to ensure content is informative and appealing, and collaborate with marketing, sales, and product development teams.</p>
+								</div>
+								<div class="about-col about-visual">
+									<img src="assets/images/about/karsten-winegeart-60GsdOMRFGc-unsplash.jpg" alt="About Hagar Khaled" class="about-photo">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="skills" style="background:rgba(0,123,255,0.05);">
+		<div class="section-heading text-center">
+			<h2><i class="fas fa-tools"></i> Skills</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-lightbulb"></i><h3>Content Creation</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-project-diagram"></i><h3>Content Strategy</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-search"></i><h3>Content Research</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-chart-pie"></i><h3>Content Analysis</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-calendar-check"></i><h3>Content Planning</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-tasks"></i><h3>Project Management</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-paint-brush"></i><h3>Creativity</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-comments"></i><h3>Communication</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-check-double"></i><h3>Efficiency</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-bullseye"></i><h3>Accuracy</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fas fa-clock"></i><h3>Time Management</h3></div></div>
+				<div class="col-md-4"><div class="skill-item"><i class="fab fa-windows"></i><h3>Windows OS</h3></div></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="experience" class="experience">
+		<div class="section-heading text-center">
+			<h2><i class="fas fa-briefcase"></i> Experience</h2>
+		</div>
+		<div class="container">
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-date"></div>
+					<h4 class="timeline-title">Moderator and Creator</h4>
+					<p class="timeline-subtitle">Facebook Groups & Pages</p>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-date"></div>
+					<h4 class="timeline-title">Sales</h4>
+					<p class="timeline-subtitle">Facebook Groups & Pages</p>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-date"></div>
+					<h4 class="timeline-title">Content Creation Internship</h4>
+					<p class="timeline-subtitle">Gallery Bahga page & Color Shop page</p>
+					<div class="timeline-text">
+						<ul>
+							<li>Learned to create and distribute marketing copy for advertising</li>
+							<li>Managed social media content and developed content plans</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-date"></div>
+					<h4 class="timeline-title">Content Creator</h4>
+					<p class="timeline-subtitle">Lukaku jeans page, Mai Alkady Page, Unique offers</p>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-date"></div>
+					<h4 class="timeline-title">Moderator</h4>
+					<p class="timeline-subtitle">Color Shop page</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="education" class="certifications">
+		<div class="section-heading text-center">
+			<h2><i class="fas fa-graduation-cap"></i> Education & Courses</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="certification-item">
+						<h3>Bachelor Degree – Arts Oriental Department</h3>
+						<p class="provider">Cairo University (2016–2019)</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="certification-item">
+						<h3>Digital Marketing Course</h3>
+						<p class="provider">ADS for Media (2018)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio" class="portfolio">
+		<div class="portfolio-details">
+			<div class="section-heading text-center">
+				<h2><i class="fas fa-file-alt"></i> Portfolio</h2>
+			</div>
+			<div class="container">
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+					<h3>Cosmetics content</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/15cs1RDP2r6m37f84SDecvXkDjhsm4hEFXqZcda28jZA/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-shirt"></i></div>
+					<h3>Clothing brand content (lukaku)</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1P3TfmYTaVItAqPlslw6I6maKnFkHnUHXp3GFIH83kko/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-file-pen"></i></div>
+					<h3>Article content (coach)</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1Fi5wpIP8ym7nHmyqrxzHwbbqFT4FiODURIb9KyC41J8/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-bullhorn"></i></div>
+					<h3>Marketing content</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1JqBobY5aJdSf1hr6xDOEAJQfokLj8mtqOzWRnly6Fis/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-stethoscope"></i></div>
+					<h3>محتوي طبي (مقالات)</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1Im1LmulT1WRIniMaHCmhq9WM9AgEMcM8X3poRc21hhc/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+					<h3>محتوي تجميلي تجربة</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1TOwUzVVU9PD50HHVTVinoBqs9ye-oMyNGC03T1MWL20/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-door-closed"></i></div>
+					<h3>محتوي تجريبي للبوابات المصفحة</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1xPg5Pku4B6E-gIfu5F5VpNSO3rtvfJ5s2POtUOXAQEI/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-pump-soap"></i></div>
+					<h3>محتوي تجريبي منتجات تجميل</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1R5L33m26nyeer9qQNMlH_Zr9udrl0I236W0cKJQPIHQ/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-utensils"></i></div>
+					<h3>تجريبي مطعم</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1Szj4bRs49LycuK7TdzJ-2B97nJVAyb7cjSwDfUbMLVw/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+				<div class="portfolio-card">
+					<div class="pc-icon"><i class="fa-solid fa-building"></i></div>
+					<h3>محتوي عقارات (مقالات)</h3>
+					<a class="btn-view" href="https://docs.google.com/document/d/1PX_RD2sSK6xYYntL5Fu3kia4ZjqQCXDXPY3uQAoJMLk/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer-copyright" class="footer-copyright">
+		<div class="container">
+			<div class="hm-footer-copyright text-center">
+				<p>
+					&copy; 2025 Hagar Khaled. All rights reserved.
+				</p>
+			</div>
+		</div>
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up" id="scroll-top"></i>
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootsnav.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/progressbar.js"></script>
+	<script src="assets/js/jquery.appear.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+		function toggleTheme() {
+			const body = document.body;
+			const themeSwitch = document.querySelector('.theme-switch i');
+			if (body.getAttribute('data-theme') === 'dark') {
+				body.removeAttribute('data-theme');
+				themeSwitch.classList.remove('fa-sun');
+				themeSwitch.classList.add('fa-moon');
+				localStorage.setItem('theme', 'light');
+			} else {
+				body.setAttribute('data-theme', 'dark');
+				themeSwitch.classList.remove('fa-moon');
+				themeSwitch.classList.add('fa-sun');
+				localStorage.setItem('theme', 'dark');
+			}
+		}
+		document.addEventListener('DOMContentLoaded', () => {
+			const savedTheme = localStorage.getItem('theme');
+			if (savedTheme === 'dark') {
+				document.body.setAttribute('data-theme', 'dark');
+				document.querySelector('.theme-switch i').classList.replace('fa-moon', 'fa-sun');
+			}
+		});
+	</script>
+</body>
+</html>
