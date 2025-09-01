@@ -1,10 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&subset=devanagari,latin-ext" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&subset=devanagari,latin-ext"
+		rel="stylesheet">
 	<title>Hagar Khaled | Social Media Marketer & Content Creator</title>
 	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -31,6 +34,7 @@
 			--success-color: #2ecc71;
 			--shadow-color: rgba(0, 123, 255, 0.12);
 		}
+
 		[data-theme="dark"] {
 			--primary-color: #007bff;
 			--primary-dark: #0056b3;
@@ -44,104 +48,656 @@
 			--success-color: #2ecc71;
 			--shadow-color: rgba(0, 123, 255, 0.18);
 		}
-		body { background-color: var(--bg-color); color: var(--text-dark); transition: all 0.3s ease; font-family: 'Poppins', sans-serif; }
-		.theme-switch { position: fixed; top: 20px; right: 20px; z-index: 1000; background: var(--card-bg); border: none; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px var(--shadow-color); }
-		.theme-switch:hover { transform: translateY(-2px); box-shadow: 0 8px 20px var(--shadow-color); }
-		.theme-switch i { color: var(--primary-color); font-size: 24px; transition: all 0.3s ease; }
+
+		body {
+			background-color: var(--bg-color);
+			color: var(--text-dark);
+			transition: all 0.3s ease;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.theme-switch {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 1000;
+			background: var(--card-bg);
+			border: none;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 15px var(--shadow-color);
+		}
+
+		.theme-switch:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px var(--shadow-color);
+		}
+
+		.theme-switch i {
+			color: var(--primary-color);
+			font-size: 24px;
+			transition: all 0.3s ease;
+		}
 	</style>
-<style>
-/* Pro UI refinements */
-:root { --radius: 16px; --radius-lg: 22px; --space: 28px; --space-sm: 16px; }
-html, body { scroll-behavior: smooth; }
-section { padding: 96px 0; }
-@media (max-width: 768px) { section { padding: 72px 0; } }
+	<style>
+		/* Pro UI refinements */
+		:root {
+			--radius: 16px;
+			--radius-lg: 22px;
+			--space: 28px;
+			--space-sm: 16px;
+		}
 
-.navbar { background: rgba(255,255,255,0.85)!important; backdrop-filter: saturate(140%) blur(8px); box-shadow: 0 8px 30px var(--shadow-color); }
-.navbar-brand { color: var(--primary-dark)!important; font-weight: 700; letter-spacing: .3px; }
-.navbar .nav > li > a { color: var(--text-dark)!important; border-radius: 26px; margin: 4px; padding: 10px 16px; transition: .25s; }
-.navbar .nav > li > a:hover, .navbar .nav > li.active > a { background: var(--primary-color); color: #fff!important; }
+		html,
+		body {
+			scroll-behavior: smooth;
+		}
 
-.welcome-hero { position: relative; min-height: 60vh; }
-.welcome-hero:after { content:''; position:absolute; inset:0; background: radial-gradient(1200px 400px at 90% 10%, rgba(255,255,255,.18), transparent 60%), radial-gradient(900px 300px at 10% 90%, rgba(255,255,255,.15), transparent 60%); pointer-events:none; }
-.header-text h2 { font-size: 44px; letter-spacing:.2px; }
-.header-text p { font-size: 20px; opacity:.95; }
+		section {
+			padding: 96px 0;
+		}
 
-.contact-info { margin-top: 24px; display:flex; flex-wrap:wrap; justify-content:center; gap: 14px; }
-.contact-item { background: rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:10px 16px; border-radius: 999px; color:#fff; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
-.contact-item i { margin-right: 8px; color:#ffd166; }
+		@media (max-width: 768px) {
+			section {
+				padding: 72px 0;
+			}
+		}
 
-.container { max-width: 1120px; margin: 0 auto; padding: 0 18px; }
+		.navbar {
+			background: rgba(255, 255, 255, 0.85) !important;
+			backdrop-filter: saturate(140%) blur(8px);
+			box-shadow: 0 8px 30px var(--shadow-color);
+		}
 
-.section-heading { margin-bottom: 54px; text-align: center; }
-.section-heading h2 { font-size: 34px; font-weight: 800; color: var(--text-dark); display:inline-block; position: relative; padding-bottom: 10px; }
-.section-heading h2:after { content:''; position:absolute; left:50%; transform: translateX(-50%); bottom:0; width: 64%; height:4px; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); border-radius: 2px; }
+		.navbar-brand {
+			color: var(--primary-dark) !important;
+			font-weight: 700;
+			letter-spacing: .3px;
+		}
 
-.about-text, .skill-item, .certification-item { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius); box-shadow: 0 12px 30px var(--shadow-color); padding: 26px 22px; transition: transform .2s ease, box-shadow .2s ease; }
-.about-text:hover, .skill-item:hover, .certification-item:hover { transform: translateY(-4px); box-shadow: 0 18px 38px var(--shadow-color); }
-.about-text h3 { color: var(--primary-dark); font-weight:700; font-size: 22px; margin-bottom: 12px; }
-.about-text p { color: var(--text-light); line-height: 1.85; }
-.about-text .about-photo { width: 260px; height: 260px; border-radius: 50%; box-shadow: 0 12px 28px var(--shadow-color); display: block; margin: 0; object-fit: cover; border: 4px solid #fff; }
-/* Objective two-column card layout */
-.about-card { display: flex; gap: 24px; align-items: center; }
-.about-col { flex: 1 1 0; }
-.about-textual { display: flex; flex-direction: column; gap: 12px; }
-.about-textual h3 { margin: 0 0 8px 0; font-size: 28px; line-height: 1.25; }
-.about-textual p { font-size: 18px; line-height: 1.9; color: var(--text-dark); }
-.about-visual { display: flex; justify-content: flex-end; align-items: center; position: relative; }
-.about-text { background: linear-gradient(180deg, var(--card-bg), var(--card-bg)) padding-box, linear-gradient(135deg, rgba(52,152,219,.25), rgba(231,76,60,.25)) border-box; border:1px solid transparent; }
-.about-textual .about-badge { display:inline-flex; align-items:center; gap:8px; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); color:#fff; border-radius:999px; padding:10px 14px; box-shadow: 0 6px 18px rgba(0,0,0,.08); font-size: 15px; font-weight: 700; letter-spacing:.3px; }
-.about-textual .about-badge i { font-size: 16px; }
-.about-visual::before { content:''; position:absolute; right:-10px; top:50%; transform: translateY(-50%); width: 240px; height: 240px; background: radial-gradient(closest-side, rgba(0,123,255,.28), rgba(0,0,0,0)); border-radius: 50%; filter: blur(8px); z-index:0; }
-.about-text .about-photo { z-index: 1; }
-@media (max-width: 768px) {
-	.about-card { flex-direction: column; }
-	.about-visual { justify-content: center; }
-	.about-text .about-photo { width: 200px; height: 200px; }
-	.about-textual h3 { font-size: 24px; }
-	.about-textual p { font-size: 16.5px; }
-}
+		.navbar .nav>li>a {
+			color: var(--text-dark) !important;
+			border-radius: 26px;
+			margin: 4px;
+			padding: 10px 16px;
+			transition: .25s;
+		}
 
-.skills .row { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
-.skill-item { text-align:center; min-width: 200px; max-width: 280px; }
-.skill-item i { font-size: 34px; color: var(--primary-color); margin-bottom: 12px; }
-.skill-item h3 { font-size: 15px; margin: 0; color: var(--text-dark); }
+		.navbar .nav>li>a:hover,
+		.navbar .nav>li.active>a {
+			background: var(--primary-color);
+			color: #fff !important;
+		}
 
-.timeline { position: relative; margin-top: 8px; }
-.timeline:before { content:''; position: absolute; left: 12px; top: 0; bottom: 0; width: 3px; background: linear-gradient(var(--primary-light), var(--primary-dark)); border-radius: 2px; }
-.timeline-item { position: relative; margin-left: 44px; margin-bottom: 26px; padding: 14px 16px 10px 16px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius); box-shadow: 0 8px 22px var(--shadow-color); }
-.timeline-item:before { content:''; position: absolute; left: -38px; top: 18px; width: 18px; height: 18px; border-radius: 50%; background: #fff; border:3px solid var(--primary-color); box-shadow: 0 0 0 6px rgba(0,123,255,.12); }
-.timeline-date { font-size: 13px; color: var(--primary-color); font-weight: 700; letter-spacing: .3px; margin-bottom: 6px; }
-.timeline-title { font-size: 18px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
-.timeline-subtitle { font-size: 14px; color: var(--primary-dark); margin-bottom: 8px; font-weight: 600; }
-.timeline-text ul { padding-left: 18px; margin: 0; }
-.timeline-text li { color: var(--text-light); margin-bottom: 6px; }
+		.welcome-hero {
+			position: relative;
+			min-height: 60vh;
+		}
 
-.certification-item h3 { font-size: 17px; margin-bottom: 2px; }
-.certification-item .provider { color: var(--primary-color); font-weight: 600; }
+		.welcome-hero:after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(1200px 400px at 90% 10%, rgba(255, 255, 255, .18), transparent 60%), radial-gradient(900px 300px at 10% 90%, rgba(255, 255, 255, .15), transparent 60%);
+			pointer-events: none;
+		}
 
-.portfolio-details { padding-top: 8px; }
-.portfolio .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px; }
-.portfolio-item { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: #fff; box-shadow: 0 12px 28px var(--shadow-color); transform: translateZ(0); }
-.portfolio-item img { width: 100%; height: 220px; object-fit: cover; display: block; }
-.portfolio-item a::after { content: 'View'; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.0), rgba(0,0,0,.45)); color: #fff; font-weight: 600; letter-spacing: .4px; display: grid; place-items: end center; padding-bottom: 14px; opacity: 0; transition: opacity .25s ease; }
-.portfolio-item:hover a::after { opacity: 1; }
+		.header-text h2 {
+			font-size: 44px;
+			letter-spacing: .2px;
+		}
 
-/* Portfolio cards */
-.portfolio-card { position: relative; background: var(--card-bg); border:1px solid var(--border-color); border-radius: var(--radius); box-shadow: 0 10px 26px var(--shadow-color); padding: 24px 20px; min-height: 220px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start; transition: transform .25s ease, box-shadow .25s ease; color: var(--text-dark); }
-.portfolio-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px var(--shadow-color); }
-.portfolio-card h3 { margin: 0; font-size: 20px; font-weight: 700; color: var(--text-dark); }
-.pc-icon { width: 48px; height: 48px; border-radius: 12px; display:flex; align-items:center; justify-content:center; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); color:#fff; box-shadow: 0 6px 16px rgba(0,0,0,.15); }
-.pc-icon i { font-size: 22px; }
-.portfolio-card .btn-view { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; padding: 12px 16px; border-radius: 999px; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); color: #fff; font-weight: 700; text-decoration: none; letter-spacing: .2px; box-shadow: 0 6px 16px rgba(0,0,0,.25); font-size: 14.5px; }
-.portfolio-card .btn-view:hover { filter: brightness(1.05); }
+		.header-text p {
+			font-size: 20px;
+			opacity: .95;
+		}
 
-.footer-copyright { margin-top: 56px; background: var(--card-bg); border-top: 1px solid var(--border-color); }
+		.contact-info {
+			margin-top: 24px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 14px;
+		}
 
-#scroll-Top .return-to-top { background: var(--primary-color); border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; color: #fff; position: fixed; bottom: 26px; right: 22px; box-shadow: 0 10px 22px var(--shadow-color); }
-#scroll-Top .return-to-top:hover { background: var(--accent-color); transform: translateY(-2px); }
-@media (max-width: 480px) { .header-text h2 { font-size: 32px; } .header-text p { font-size: 18px; } }
-</style>
+		.contact-item {
+			background: rgba(255, 255, 255, .16);
+			border: 1px solid rgba(255, 255, 255, .22);
+			padding: 10px 16px;
+			border-radius: 999px;
+			color: #fff;
+			box-shadow: 0 4px 18px rgba(0, 0, 0, .08);
+		}
+
+		.contact-item i {
+			margin-right: 8px;
+			color: #ffd166;
+		}
+
+		.container {
+			max-width: 1120px;
+			margin: 0 auto;
+			padding: 0 18px;
+		}
+
+		.section-heading {
+			margin-bottom: 54px;
+			text-align: center;
+		}
+
+		.section-heading h2 {
+			font-size: 34px;
+			font-weight: 800;
+			color: var(--text-dark);
+			display: inline-block;
+			position: relative;
+			padding-bottom: 10px;
+		}
+
+		.section-heading h2:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+			width: 64%;
+			height: 4px;
+			background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+			border-radius: 2px;
+		}
+
+		.about-text,
+		.skill-item,
+		.certification-item {
+			background: var(--card-bg);
+			border: 1px solid var(--border-color);
+			border-radius: var(--radius);
+			box-shadow: 0 12px 30px var(--shadow-color);
+			padding: 26px 22px;
+			transition: transform .2s ease, box-shadow .2s ease;
+		}
+
+		.about-text:hover,
+		.skill-item:hover,
+		.certification-item:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 18px 38px var(--shadow-color);
+		}
+
+		.about-text h3 {
+			color: var(--primary-dark);
+			font-weight: 700;
+			font-size: 22px;
+			margin-bottom: 12px;
+		}
+
+		.about-text p {
+			color: var(--text-light);
+			line-height: 1.85;
+		}
+
+		.about-text .about-photo {
+			width: 260px;
+			height: 260px;
+			border-radius: 50%;
+			box-shadow: 0 12px 28px var(--shadow-color);
+			display: block;
+			margin: 0;
+			object-fit: cover;
+			border: 4px solid #fff;
+		}
+
+		/* Objective two-column card layout */
+		.about-card {
+			display: flex;
+			gap: 24px;
+			align-items: center;
+		}
+
+		.about-col {
+			flex: 1 1 0;
+		}
+
+		.about-textual {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+		}
+
+		.about-textual h3 {
+			margin: 0 0 8px 0;
+			font-size: 28px;
+			line-height: 1.25;
+		}
+
+		.about-textual p {
+			font-size: 18px;
+			line-height: 1.9;
+			color: var(--text-dark);
+		}
+
+		.about-visual {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			position: relative;
+		}
+
+		.about-text {
+			background: linear-gradient(180deg, var(--card-bg), var(--card-bg)) padding-box, linear-gradient(135deg, rgba(52, 152, 219, .25), rgba(231, 76, 60, .25)) border-box;
+			border: 1px solid transparent;
+		}
+
+		.about-textual .about-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+			color: #fff;
+			border-radius: 999px;
+			padding: 10px 14px;
+			box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+			font-size: 15px;
+			font-weight: 700;
+			letter-spacing: .3px;
+		}
+
+		.about-textual .about-badge i {
+			font-size: 16px;
+		}
+
+		.about-visual::before {
+			content: '';
+			position: absolute;
+			right: -10px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 240px;
+			height: 240px;
+			background: radial-gradient(closest-side, rgba(0, 123, 255, .28), rgba(0, 0, 0, 0));
+			border-radius: 50%;
+			filter: blur(8px);
+			z-index: 0;
+		}
+
+		.about-text .about-photo {
+			z-index: 1;
+		}
+
+		@media (max-width: 768px) {
+			.about-card {
+				flex-direction: column;
+			}
+
+			.about-visual {
+				justify-content: center;
+			}
+
+			.about-text .about-photo {
+				width: 200px;
+				height: 200px;
+			}
+
+			.about-textual h3 {
+				font-size: 24px;
+			}
+
+			.about-textual p {
+				font-size: 16.5px;
+			}
+		}
+
+		.skills .row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 18px;
+			justify-content: center;
+		}
+
+		.skill-item {
+			text-align: center;
+			min-width: 200px;
+			max-width: 280px;
+		}
+
+		.skill-item i {
+			font-size: 34px;
+			color: var(--primary-color);
+			margin-bottom: 12px;
+		}
+
+		.skill-item h3 {
+			font-size: 15px;
+			margin: 0;
+			color: var(--text-dark);
+		}
+
+		.timeline {
+			position: relative;
+			margin-top: 8px;
+		}
+
+		.timeline:before {
+			content: '';
+			position: absolute;
+			left: 12px;
+			top: 0;
+			bottom: 0;
+			width: 3px;
+			background: linear-gradient(var(--primary-light), var(--primary-dark));
+			border-radius: 2px;
+		}
+
+		.timeline-item {
+			position: relative;
+			margin-left: 44px;
+			margin-bottom: 26px;
+			padding: 14px 16px 10px 16px;
+			background: var(--card-bg);
+			border: 1px solid var(--border-color);
+			border-radius: var(--radius);
+			box-shadow: 0 8px 22px var(--shadow-color);
+		}
+
+		.timeline-item:before {
+			content: '';
+			position: absolute;
+			left: -38px;
+			top: 18px;
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background: #fff;
+			border: 3px solid var(--primary-color);
+			box-shadow: 0 0 0 6px rgba(0, 123, 255, .12);
+		}
+
+		.timeline-date {
+			font-size: 13px;
+			color: var(--primary-color);
+			font-weight: 700;
+			letter-spacing: .3px;
+			margin-bottom: 6px;
+		}
+
+		.timeline-title {
+			font-size: 18px;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin-bottom: 4px;
+		}
+
+		.timeline-subtitle {
+			font-size: 14px;
+			color: var(--primary-dark);
+			margin-bottom: 8px;
+			font-weight: 600;
+		}
+
+		.timeline-text ul {
+			padding-left: 18px;
+			margin: 0;
+		}
+
+		.timeline-text li {
+			color: var(--text-light);
+			margin-bottom: 6px;
+		}
+
+		.certification-item h3 {
+			font-size: 17px;
+			margin-bottom: 2px;
+		}
+
+		.certification-item .provider {
+			color: var(--primary-color);
+			font-weight: 600;
+		}
+
+		.portfolio-details {
+			padding-top: 8px;
+		}
+
+		.portfolio .container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 26px;
+		}
+
+		.portfolio-item {
+			position: relative;
+			border-radius: var(--radius-lg);
+			overflow: hidden;
+			background: #fff;
+			box-shadow: 0 12px 28px var(--shadow-color);
+			transform: translateZ(0);
+		}
+
+		.portfolio-item img {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			display: block;
+		}
+
+		.portfolio-item a::after {
+			content: 'View';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(180deg, rgba(0, 0, 0, .0), rgba(0, 0, 0, .45));
+			color: #fff;
+			font-weight: 600;
+			letter-spacing: .4px;
+			display: grid;
+			place-items: end center;
+			padding-bottom: 14px;
+			opacity: 0;
+			transition: opacity .25s ease;
+		}
+
+		.portfolio-item:hover a::after {
+			opacity: 1;
+		}
+
+		/* Inner heading style for portfolio */
+		.portfolio .inner-heading {
+			margin: 4px 0 14px;
+			font-size: 20px;
+			font-weight: 700;
+			color: var(--text-dark);
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.portfolio .inner-heading::before {
+			content: '';
+			width: 6px;
+			height: 18px;
+			border-radius: 3px;
+			background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+			box-shadow: 0 4px 10px var(--shadow-color);
+		}
+
+		/* Filter controls */
+		.portfolio-filters {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			justify-content: center;
+			margin: 6px 0 18px;
+		}
+		.portfolio .filter-heading {
+			cursor: pointer;
+			margin: 0;
+			padding: 8px 14px;
+			border-radius: 999px;
+			background: var(--card-bg);
+			border: 1px solid var(--border-color);
+			box-shadow: 0 6px 18px var(--shadow-color);
+			transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			font-size: 15px;
+		}
+		.portfolio .filter-heading:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 10px 22px var(--shadow-color);
+			filter: brightness(1.03);
+		}
+		.portfolio .filter-heading.active {
+			background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+			color: #fff;
+			border-color: transparent;
+		}
+		.portfolio .filter-heading::before {
+			display: none;
+		}
+
+		/* Portfolio cards */
+		.portfolio-card {
+			position: relative;
+			background: var(--card-bg);
+			border: 1px solid var(--border-color);
+			border-radius: var(--radius);
+			box-shadow: 0 10px 26px var(--shadow-color);
+			padding: 24px 20px;
+			min-height: 220px;
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+			align-items: flex-start;
+			transition: transform .25s ease, box-shadow .25s ease;
+			color: var(--text-dark);
+		}
+
+		.portfolio-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 16px 36px var(--shadow-color);
+		}
+
+		.portfolio-card h3 {
+			margin: 0;
+			font-size: 20px;
+			font-weight: 700;
+			color: var(--text-dark);
+		}
+
+		.pc-icon {
+			width: 48px;
+			height: 48px;
+			border-radius: 12px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+			color: #fff;
+			box-shadow: 0 6px 16px rgba(0, 0, 0, .15);
+		}
+
+		.pc-icon i {
+			font-size: 22px;
+		}
+
+		.portfolio-card .btn-view {
+			position: relative;
+			z-index: 1;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 12px 16px;
+			border-radius: 999px;
+			background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+			color: #fff;
+			font-weight: 700;
+			text-decoration: none;
+			letter-spacing: .2px;
+			box-shadow: 0 6px 16px rgba(0, 0, 0, .25);
+			font-size: 14.5px;
+		}
+
+		.portfolio-card .btn-view:hover {
+			filter: brightness(1.05);
+		}
+
+		.footer-copyright {
+			margin-top: 56px;
+			background: var(--card-bg);
+			border-top: 1px solid var(--border-color);
+		}
+
+		#scroll-Top .return-to-top {
+			background: var(--primary-color);
+			border-radius: 50%;
+			width: 46px;
+			height: 46px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			position: fixed;
+			bottom: 26px;
+			right: 22px;
+			box-shadow: 0 10px 22px var(--shadow-color);
+		}
+
+		#scroll-Top .return-to-top:hover {
+			background: var(--accent-color);
+			transform: translateY(-2px);
+		}
+
+		@media (max-width: 480px) {
+			.header-text h2 {
+				font-size: 32px;
+			}
+
+			.header-text p {
+				font-size: 18px;
+			}
+		}
+	</style>
+	<style>
+		/* Tooltip for portfolio images (uses theme variables) */
+		.img-tooltip {
+			position: fixed;
+			z-index: 9999;
+			max-width: 320px;
+			min-width: 280px;
+			background: var(--card-bg);
+			color: var(--text-dark);
+			border: 1px solid var(--border-color);
+			box-shadow: 0 12px 30px var(--shadow-color);
+			padding: 10px 12px;
+			border-radius: var(--radius);
+			font-size: 14px;
+			line-height: 1.55;
+			pointer-events: none;
+			white-space: pre-wrap;
+			overflow-wrap: anywhere;
+			word-break: break-word;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		/* Wider variants applied for longer texts */
+		.img-tooltip--wide {
+			max-width: 560px;
+		}
+
+		.img-tooltip--xwide {
+			max-width: 760px;
+		}
+	</style>
 </head>
+
 <body>
 	<div class="theme-switch" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
 		<i class="fas fa-moon"></i>
@@ -161,12 +717,16 @@ section { padding: 96px 0; }
 					</div>
 					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li class="smooth-menu active"><a href="#welcome-hero"><i class="fas fa-home"></i> Home</a></li>
+							<li class="smooth-menu active"><a href="#welcome-hero"><i class="fas fa-home"></i> Home</a>
+							</li>
 							<li class="smooth-menu"><a href="#about"><i class="fas fa-user"></i> About</a></li>
-							<li class="smooth-menu"><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+							<li class="smooth-menu"><a href="#experience"><i class="fas fa-briefcase"></i>
+									Experience</a></li>
 							<li class="smooth-menu"><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
-							<li class="smooth-menu"><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-							<li class="smooth-menu"><a href="#portfolio"><i class="fas fa-file-alt"></i> Portfolio</a></li>
+							<li class="smooth-menu"><a href="#education"><i class="fas fa-graduation-cap"></i>
+									Education</a></li>
+							<li class="smooth-menu"><a href="#portfolio"><i class="fas fa-file-alt"></i> Portfolio</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -175,7 +735,8 @@ section { padding: 96px 0; }
 		<div class="clearfix"></div>
 	</header>
 
-	<section id="welcome-hero" class="welcome-hero" style="padding:120px 0; background-image: linear-gradient(135deg, rgba(0, 123, 255, 0.65) 0%, rgba(0, 86, 179, 0.65) 100%), url('assets/images/hero/theregisti-ziSzilQLSOM-unsplash.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+	<section id="welcome-hero" class="welcome-hero"
+		style="padding:120px 0; background-image: linear-gradient(135deg, rgba(0, 123, 255, 0.65) 0%, rgba(0, 86, 179, 0.65) 100%), url('assets/images/hero/theregisti-ziSzilQLSOM-unsplash.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -214,10 +775,13 @@ section { padding: 96px 0; }
 							<div class="about-card">
 								<div class="about-col about-textual">
 									<h3><span class="about-badge"><i class="fas fa-bullseye"></i> Objective</span></h3>
-									<p>Social Media marketer and Content Creator seeking to improve my skills, work with copywriters and designers to ensure content is informative and appealing, and collaborate with marketing, sales, and product development teams.</p>
+									<p>Social Media marketer and Content Creator seeking to improve my skills, work with
+										copywriters and designers to ensure content is informative and appealing, and
+										collaborate with marketing, sales, and product development teams.</p>
 								</div>
 								<div class="about-col about-visual">
-									<img src="assets/images/about/karsten-winegeart-60GsdOMRFGc-unsplash.jpg" alt="About Hagar Khaled" class="about-photo">
+									<img src="assets/images/about/karsten-winegeart-60GsdOMRFGc-unsplash.jpg"
+										alt="About Hagar Khaled" class="about-photo">
 								</div>
 							</div>
 						</div>
@@ -233,18 +797,66 @@ section { padding: 96px 0; }
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-lightbulb"></i><h3>Content Creation</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-project-diagram"></i><h3>Content Strategy</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-search"></i><h3>Content Research</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-chart-pie"></i><h3>Content Analysis</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-calendar-check"></i><h3>Content Planning</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-tasks"></i><h3>Project Management</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-paint-brush"></i><h3>Creativity</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-comments"></i><h3>Communication</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-check-double"></i><h3>Efficiency</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-bullseye"></i><h3>Accuracy</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fas fa-clock"></i><h3>Time Management</h3></div></div>
-				<div class="col-md-4"><div class="skill-item"><i class="fab fa-windows"></i><h3>Windows OS</h3></div></div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-lightbulb"></i>
+						<h3>Content Creation</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-project-diagram"></i>
+						<h3>Content Strategy</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-search"></i>
+						<h3>Content Research</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-chart-pie"></i>
+						<h3>Content Analysis</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-calendar-check"></i>
+						<h3>Content Planning</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-tasks"></i>
+						<h3>Project Management</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-paint-brush"></i>
+						<h3>Creativity</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-comments"></i>
+						<h3>Communication</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-check-double"></i>
+						<h3>Efficiency</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-bullseye"></i>
+						<h3>Accuracy</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fas fa-clock"></i>
+						<h3>Time Management</h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill-item"><i class="fab fa-windows"></i>
+						<h3>Windows OS</h3>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -321,58 +933,428 @@ section { padding: 96px 0; }
 			<div class="section-heading text-center">
 				<h2><i class="fas fa-file-alt"></i> Portfolio</h2>
 			</div>
-			<div class="container">
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
-					<h3>Cosmetics content</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/15cs1RDP2r6m37f84SDecvXkDjhsm4hEFXqZcda28jZA/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-shirt"></i></div>
-					<h3>Clothing brand content (lukaku)</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1P3TfmYTaVItAqPlslw6I6maKnFkHnUHXp3GFIH83kko/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-file-pen"></i></div>
-					<h3>Article content (coach)</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1Fi5wpIP8ym7nHmyqrxzHwbbqFT4FiODURIb9KyC41J8/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-bullhorn"></i></div>
-					<h3>Marketing content</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1JqBobY5aJdSf1hr6xDOEAJQfokLj8mtqOzWRnly6Fis/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-stethoscope"></i></div>
-					<h3>محتوي طبي (مقالات)</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1Im1LmulT1WRIniMaHCmhq9WM9AgEMcM8X3poRc21hhc/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-					<h3>محتوي تجميلي تجربة</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1TOwUzVVU9PD50HHVTVinoBqs9ye-oMyNGC03T1MWL20/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-door-closed"></i></div>
-					<h3>محتوي تجريبي للبوابات المصفحة</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1xPg5Pku4B6E-gIfu5F5VpNSO3rtvfJ5s2POtUOXAQEI/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-pump-soap"></i></div>
-					<h3>محتوي تجريبي منتجات تجميل</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1R5L33m26nyeer9qQNMlH_Zr9udrl0I236W0cKJQPIHQ/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-utensils"></i></div>
-					<h3>تجريبي مطعم</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1Szj4bRs49LycuK7TdzJ-2B97nJVAyb7cjSwDfUbMLVw/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
-				<div class="portfolio-card">
-					<div class="pc-icon"><i class="fa-solid fa-building"></i></div>
-					<h3>محتوي عقارات (مقالات)</h3>
-					<a class="btn-view" href="https://docs.google.com/document/d/1PX_RD2sSK6xYYntL5Fu3kia4ZjqQCXDXPY3uQAoJMLk/edit?usp=drivesdk" target="_blank">مشاهده المحتوى</a>
-				</div>
+			<div class="portfolio-filters" aria-label="Portfolio filters">
+				<h3 class="inner-heading filter-heading" data-filter="all"><i class="fas fa-layer-group"></i> All</h3>
+				<h3 class="inner-heading filter-heading" data-filter="cosmetics">Cosmetics</h3>
+				<h3 class="inner-heading filter-heading" data-filter="clothing">Clothing</h3>
+				<h3 class="inner-heading filter-heading" data-filter="article">Article</h3>
+				<h3 class="inner-heading filter-heading" data-filter="marketing">Marketing</h3>
+				<h3 class="inner-heading filter-heading" data-filter="medical">Medical</h3>
 			</div>
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Cosmetics/1.png" alt="من النهاردة مش هتتأخري علي مواعيدك من تاني ولا يومك المميز تقضية في الكوافير  🙁
+HaskinHub⌚هيحللك كل مشاكلك 
+
+النتيجة الأفضل في وقت قياسي
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Cosmetics/2.png" alt="
+مش لازم علشان تختاري مظهر كويس لشعرك إنك تهلكية مكاوي وسيشوار 😟
+ ولا إنك تتنازلي عن الاستايل الي نفسك فيه 
+HaskinHub جمعتلك الاتنين
+
+صحة شعرك معانا في أمان
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Cosmetics/3.png" alt="
+
+مش محتاجة حجوزات ولا وانتظار بالاسابيع علشان توصلي للراحة و الشكل المثالي الي بتحلمي بيه 😊
+معانا شعرك في آمان
+
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Cosmetics/4.png" alt="
+
+فاكرة لما اتقالك نفسي شعري يبقي زي شعرك 🤔
+و للأسف دلوقتي شعرك مش زي زمان بسبب تأثيرات الصوديوم و المواد المضره و نقص الفيتامينات و غيرها من العوامل المؤثرة علي شعرك 
+
+HaskinHub هترجع شعرك زي الاول واحسن
+
+
+">
+
+					</div>
+
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Clothing/1.png" alt="
+
+يا ليلة العيد انيستينا 🎉🎊
+ليلة العيد مرتبطة دايما معانا بأيام زمان و لبس العيد الي كان لازم يبقي قدنا مرتين تلاته علشان يعيش معانا 
+
+احكولنا عن ذكرياتكم مع لبس العيد 
+و الامهات الجداد يا تري بتعملوا كدا في ولادكم زي ما كان بيتعمل فيكم
+
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Clothing/2.png" alt="
+الشتا هتدخل علينا و هنبدأ نتقل للأولاد 🤦🏼‍♀
+
+دايما بتدوري علي جاكت يبقي تقيل و يدفي و يبقي كمان مبطن و شيك يمشي معاه مدرسه او دروس و خروج و بتحسي إنه صعب تلاقي جاكت بالمواصفات دي 🧐
+
+جبنالك الجاكت إللي بتدوري عليه بيدفى لأنه مبطن من الداخل فرو بالكامل يعنى هتبقى مطمنه على اولادك 💪🏻😎
+
+1⃣ المقاسات: من ٦ سنين ل ١٦ سنة
+2⃣الالوان: اسود _زيتى _ رمادى _نبيتى
+3⃣التوصيل خلال ٢٤ ساعه🤩
+
+و خلى بالك المنتج بيوصل لحضرتك زى ما طلبيتيه بالظبط بدون اى اختلاف و تقدرى المنتج و يقدروا الاولاد يقيسوه فى وجود المندوب و لو فى مشاكله نبدله لحضرتك بدوى اى مشاكل😌
+
+💡لطلب الجاكيت ابعتلنا على رسائل الصفحه😉
+
+
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Clothing/3.png" alt="
+اللبس مش بالعدد ف الاخر بنلبس قطعتين او تلاته لما تيجي تختارى، اختارى القطعه اللى تريحك😌
+
+ علشان كده lukakuجابتلك السلوبيت بنطلون مش بس كده السلوبيت بنطلون ممكن نفصلوا و يتلبس بنطلون لوحده🤩🙈
+
+السلوبيت رجع من تاني يلا ابدؤا  الحجز معانا
+
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Clothing/4.png" alt="
+فلوسك بتروح في الهوا 💸
+كام مرة جبتي اوردر لاولادك و اتدبستي فيه ولما حبيتي ترجعيه او تبدلي المقاس اتهربوا منك و عملولك بلوك ⁦☹️⁩
+لان هما كان هدفهم البيع وبس لكن إحنا في  lukaku  فريق متكامل بنتابع معاكي وصول الاوردر و كمان رأيك بعد ما تستلميه
+
+
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Article/1.png" alt="
+هل الحب بيبدأ من العقل ولا من قلب ؟ وانهي فيهم اصح ؟ 
+ هل بنحب بختيارنا و لا قلبنا الي بيختار و احنا بنمشي وراه ؟ 🤔
+
+
+سألنا السؤال ده  البوست الي فات و عملنا عليه vote 
+هل الحب بيكون من اول نظرة ؟ 
+هل الحب بيبدأ من العقل ولا من قلب ؟ وانهي فيهم اصح ؟ 
+ هل بنحب بختيارنا و لا قلبنا الي بيختار و احنا بنمشي وراه ؟ 🤔
+
+و اختلفت الاجابات عليه و لكن الاختيار الاكتر كان في صالح ان الحب بيكون عن طريق العقل 
+
+فترة الخطوبة 
+هيا الفترة الانتقالية الي بنقدر نقيس فيها مدي صحة اختيارنا لشريك حياتنا 
+كتير من الأشخاص بيقعوا في خطأ كبير و هو انهم بيعيشوا فترة الخطوبة فُسح و مشاعر حلوة كتير و إهتمام بس 
+وهما هما نفس الاشخاص الي بتشتكي بعد الجواز و بتواجه مشاكل كتير جداا و اغلبها يؤدي للطلاق 
+
+و كل شخص يبدأ يشوف الطرف الاخر غلطان وانه هو الي اتغير عن فترة الخطوبة و مبقاش يهتم زي زمان 
+و نسمع جملة ده مبقاش يحبني زي الاول 
+ويبدأوا في اتهامات زي ( بدأ يتحكم فيا ، عايزني اغير لبسي ، مش عايزني ازور  اهلي )
+
+و هو يقول ( بقت زنانة  و نكدية ، طول الوقت عايزة هدايا و فسخ مش مقدرة ان عندي شغل و مسؤلية ، عايزة تكمل شغل و مش مهتمية ببيتها )
+
+#رحلة_التغيير_تبدأ_من_الآن
+
+
+
+">
+
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Article/2.png" alt="
+بيجلنا اسئلة كتير زي ⁦⬇️⁩⁦⬇️⁩
+
+هل لو سألته عن المرتب و أن يكون ليا مصروف شخصي او اني عايزاه هو الي يكون مسؤل مسؤلية كاملة عن المصاريف في بداية التعارف
+او 
+هل لو انا طرحت فكرة اني بحب ابقي عارف كل حاجة بالتفاصيل و الفلوس الي محتجاها كل شهر 
+ و ايه اهم الحاجات الي هتكون في بيتنا او هل هتشارك بمرتبها لو بتشتغل ولا هتقول عليا طمعان فيها 
+
+كتير من الناس بتتردد في البداية انها تتكلم في الماديات بل فيه ناس كتير بتتجنبها تماما و تتحرج من الكلام فيها 
+مهم نتكلم في الماديات ولكن مش لازم نتعمق في التفاصيل 
+علشان منخلقش حساسيات 
+ودي كانت رقم 4 من الأساسيات ال 7 لاهم المواضيع في فترة الخطوبة او التعارف
+و نكمل باقي الاساسيات⁦ 👇
+
+خامساً :  من اهم النقط الي لازم نكون واضحين فيها الاطفال
+ضروري نبقي موضحين رغبتنا سواء في اننا عايزين خلفة بعد الجواز علي طول ولا بنفضل نأجل الخلفة فترة
+و مين هيكون مسؤل عن الأطفال هل المسؤلية الكاملة للأم
+ولا الاب هيتحمل بعض المسؤوليات زي انه مسؤل عن جانب الرياضه او المذاكرة للاولاد 
+كل الحاجات دي محتاجين تتكلموا فيها و مينفعش تتأجل للنهاية علشان بتحصل مشاكل كتير 
+
+سادساً : الأهل
+علاقته بأهلك و اخواتك عاملة ازي ؟؟ ، علاقتها بوالدتك و والدك 
+هل هتقولها بعد كده هنروح لاهلي يوم الخميس مش لاهلك 
+حياتكم الاسرية و العائلية هتكون بأنهي شكل 
+و علشان نبعد عن الخلاف ده محتاجين نتكلم فيه في فترة الخطوبة 
+
+سابعاً  : الأصدقاء
+مش من الصح انك تيجي بعد الجواز و تقول لشريكة حياتك ابعدي عن اصدقائك او مش حابب انكم تتقابلوا 
+الصح من البداية انك تكون موضح  انك فلانه و فلانه مش بترتاح ليهم  انك مثلا مش حابب انها تخرج مع صحابها لوحدهم 
+و البنات كمان محتجين يكونوا موضحين موقفهم من صداقته للبنات و موقفهم من خروجه معاهم 
+الحاجات دي من الضروريات الي لازم الاتفاق عليها قبل الجواز قبل ما تدخلوا المشاعر و الأهتمام 
+
+ ولو اتبعتوا الاساسيات دي في اختياركم هتعيشوا حياة زوجية سعيدة او علي الاقل ناجحة 👌
+
+#رحلة_التغيير_تبدأ_من_الآن
+
+">
+
+					</div>
+
+
+				</div>
+							<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Article/3.png" alt="
+الزوجات الحزينة او التعيسة في حياتها بتستغرب ان ازواجهم مبيحاولوش يبذلوا مجهود و يطلعوهم من المود ده علشان يكونوا مبسوطين 🤔
+علي الصعيد الاخر 
+بنلاقي ان السيدات السعيدة ازواجهم بيسعدوهم اكتر و اكتر مع انهم في الأساس سعداء🙄
+لية بقي ؟؟؟؟ 
+
+في احصائة اتعملت علي 1000راجل اكتشفنا ان 88% منهم بيحاولو يكونو سبب في سعادة اكبر للست رغم انها سعيدة في الاساس
+فلما يحس انك سعيدة معاه هيحاول يسعدك اكتر 
+بعض الازواج هتقولنا هو بيقوم مش طايق نفسه بيزعق علي اي حاجة 
+هنقولكم ان ده بسبب التراكمات و الأسلوب الخطأ من البداية فا لازم تغيري التراكمات دي 
+هيجلنا سؤال دلوقتي يقول اشمعنا انا الي اتغير !!!
+اكيد الراجل عليه برضو شوية إلتزامات او خطوات يعملهم علشان الحياة تبقي افضل و لكن هنبدأ بالسيدات 
+- وهما الي يقدرو يكونو سبب في نجاح البيت او سبب في فشله
+لانهم القادة و الجزء الاقوي في البيت 
+
+علشان كده علي مدار الاسبوع ده هيكون معانا كل يوم مقال عن ازاي اكون سعيدة مع شريك حياتي 
+
+#رحلة_التغيير_تبدأ_من_الآن
+
+
+">
+
+					</div>
+
+
+				</div>
+							<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Marketing/1.png" alt="">
+
+					</div>
+				</div>
+							<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Marketing/2.png" alt="">
+
+					</div>
+				</div>
+							<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Marketing/3.png" alt="">
+
+					</div>
+				</div>
+							<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Marketing/4.png" alt="">
+
+					</div>
+				</div>
+							<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Marketing/5.png" alt="">
+
+					</div>
+				</div>
+							<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Marketing/6.png" alt="">
+
+					</div>
+				</div>
+						<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Medical/1.png" alt="
+						
+						
+
+اورام الرحم الليفية ممكن تسببلك مشاكل كتير 😔
+
+منها تأخر الإنجاب و الإجهاض المتكرر او الولادة المبكرة الأعراض المصاحبة للمرض تقدر تزود فرص علاجك بشكل اسرع 
+
+الاعراض المصاحبة للورم الليفى 
+
+🔰 زيادة عدد مرات التبول 
+🔰 الإمساك المزمن
+🔰 زياده في حجم محيط البطن 
+
+مركز النيل معاكي في كل خطوة بيطمنك 
+و يوفرلك احدث الأجهزة المتطورة تساعدك في اكتشاف المرض في وقت مبكر 
+
+منها الرنين المغناطيسي من شركة فيليبس بقوه واحد و نص تسلا لعمل فحوصات للرحم و المبيض وجميع انواع الأورام 
+وحده سونار و الدوبلر الملون لفحص البطن و الحوض و متابعة الحمل وفحص الرحم و المبيض من خلال الحوض او الأشعة المهبلية
+
+📌مواعيد العمل :
+- من ١٠ صباحا الي ١٠ مساءا 
+للإستفسار اتصل علي 
+- 01090829744
+- 0884780011
+او تواصل معانا علي رسائل الصفحه
+
+📌العنوان : ديروط - برج البنزايون 
+#مركز_النيل_للأشعة
+
+						
+						">
+
+					</div>
+				</div>
+						<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Medical/2.png" alt="
+						
+							الفقرات العنقية : 
+مشاكل فقرات الرقبة او الفقرات العنقية ممكن تسببلك ألم شديد و تمنعك عن ممارسة حياتك بشكل طبيعي
+و ممكن تتطور بأنها تضغط علي الأعصاب فتؤدي لمشاكل أكبر واصعب 
+
+اسبابها مختلفة وعلاجها بيعتمد علي معرفة اسباب المرض وسرعة التشخيص
+
+🔰 في مركز النيل عندنا أحدث الأشعة المقطعية الي ممكن تساعدك في دقايق و توفر عليك مجهود كبير وعلاجات خطأ ممكن تتعرضلها لو كان تشخصيك غير مناسب لحالتك 
+جهاز الأشعة المقطعية متعددة المقاطع بتفحص جميع أجزاء الجسم في دقايق معدودة 
+فحوصات ثلاثية الأبعاد للفقرات و العظام و المفاصل 
+فحوصات الرقبة و الجسم 
+فحص شرايين المخ و الرقبة 
+
+ 
+📌مواعيد العمل :
+- من ١٠ صباحا الي ١٠ مساءا 
+للإستفسار اتصل علي 
+- 01090829744
+- 0884780011
+او تواصل معانا علي رسائل الصفحه
+
+📌العنوان : ديروط - برج البنزايون 
+#مركز_النيل_للأشعة
+#صحتك_مسؤليتنا
+#دمتم_سالمين
+		
+						">
+
+					</div>
+				</div>
+						<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Medical/3.png" alt="
+						المشاكل التي تصيب المخ و تتسبب بضرر في الأنسجة 
+هي امراض دقيقة جدا يصعب تشخيصها و السيطرة عليها 
+يعاني مريضها من العديد من الأعراض المؤلمة التي تبدو في نظرة غير مبررة 
+
+أشعة الرنين المغناطيسي علي المخ من احدث الوسائل المساعدة علي معرفة المرض و تفاصيلة بشكل دقيق
+ 
+- جميع فحوصات المخ العضوية والوظيفية التى تستطيع تشخيص جميع الأمراض التي تصيب المخ بما فى ذالك تشخيص جلاطات المخ فى خلال دقائق من حدوثها لسرعة العلاج بواسطة فحص الانتشار والتروية (Diffusion & perfusion)  كما يمكن عمل فحص الرنين الطيفى (MR Spectroscopy) لمعرفة المكونات الدقيقة لخلايا المخ و قياس تتدفق سائل النخاع داخل تجاويف المخ  (CSF flowmetery)  وهو من الفحوصات الحديثة للمخ 
+
+سرعة التشخيص هي الجزء الأهم في العلاج 
+مركز النيل دليلك الصحي لحياة أفضل 
+
+- 01090829744
+- 0884780011
+📌العنوان : ديروط - مصر والسودان
+
+									
+						">
+
+					</div>
+				</div>
+						<div class="row">
+					<div class="col-md-12">
+
+						<img src="assets/images/portfolio/Medical/4.png" alt="
+						ارتفاع ضغط الدم هو اول مؤشر لوجود خلل ما بوظيفة الكلى : 
+ضغط الدم المرتفع يسبب الضرر بالأوعية الدموية 
+و خلل بوظيفة الكلى في تصفية السموم من الدم مما يؤدي الي الفشل الكلوى 
+
+جهاز الدوبلر الملون : 
+مجهز بكافة المجسات الازمة لفحص جميع اجزاء الجسم 
+- دوبلر ملون للشرايين والاوعية الدموية لجميع اجزاء الجسم لتشخيص قصور الدورة الدموية والجلاطات
+مما يساعد علي معرفة مقدار الدم المتدفق للكلية 
+
+مركز النيل دليلك الصحي لحياة أفضل 
+
+- 01090829744
+- 0884780011
+📌العنوان : ديروط - مصر والسودان
+
+									
+						">
+
+					</div>
+				</div>
+				
+				
+
+			</div>
+
+
 		</div>
 	</section>
 
@@ -425,5 +1407,130 @@ section { padding: 96px 0; }
 			}
 		});
 	</script>
+	<script>
+		(function () {
+			const OFFSET = 14;
+
+			function createTooltip(text) {
+				const el = document.createElement('div');
+				el.className = 'img-tooltip';
+				el.textContent = text;
+				el.setAttribute('dir', 'auto');
+
+				// Enlarge width for longer texts by adding variant classes
+				const len = text.replace(/\s+/g, ' ').trim().length;
+				if (len > 220) {
+					el.classList.add('img-tooltip--xwide');
+				} else if (len > 120) {
+					el.classList.add('img-tooltip--wide');
+				}
+
+				document.body.appendChild(el);
+				return el;
+			}
+
+			function positionTooltip(el, evt) {
+				// Center the popup in the viewport
+				el.style.left = '50%';
+				el.style.top = '50%';
+				el.style.transform = 'translate(-50%, -50%)';
+			}
+
+			document.addEventListener('DOMContentLoaded', function () {
+				const imgs = document.querySelectorAll('#portfolio img[alt]');
+				imgs.forEach(function (img) {
+					let tip = null;
+
+					img.addEventListener('mouseenter', function (e) {
+						const text = (img.getAttribute('alt') || '').trim();
+						if (!text) return;
+						tip = createTooltip(text);
+						positionTooltip(tip, e);
+					});
+
+					img.addEventListener('mousemove', function (e) {
+						if (tip) positionTooltip(tip, e);
+					});
+
+					img.addEventListener('mouseleave', function () {
+						if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
+						tip = null;
+					});
+
+					// Touch support
+					img.addEventListener('touchstart', function (e) {
+						const text = (img.getAttribute('alt') || '').trim();
+						if (!text) return;
+						tip = createTooltip(text);
+						const t = e.touches[0];
+						positionTooltip(tip, { clientX: t.clientX, clientY: t.clientY });
+					}, { passive: true });
+
+					img.addEventListener('touchmove', function (e) {
+						if (!tip) return;
+						const t = e.touches[0];
+						positionTooltip(tip, { clientX: t.clientX, clientY: t.clientY });
+					}, { passive: true });
+
+					img.addEventListener('touchend', function () {
+						if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
+						tip = null;
+					});
+
+					img.addEventListener('touchcancel', function () {
+						if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
+						tip = null;
+					});
+				});
+			});
+		})();
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const headings = document.querySelectorAll('#portfolio .filter-heading');
+			const rows = document.querySelectorAll('#portfolio .container .row');
+			const imgs = document.querySelectorAll('#portfolio .container img');
+
+			function getCategoryFromSrc(src) {
+				try {
+					const parts = src.split('/');
+					const idx = parts.lastIndexOf('portfolio');
+					if (idx !== -1 && parts[idx + 1]) return parts[idx + 1].toLowerCase();
+					return (parts[parts.length - 2] || '').toLowerCase();
+				} catch (e) { return ''; }
+			}
+
+			imgs.forEach(img => {
+				if (!img.dataset.category) {
+					const src = img.getAttribute('src') || '';
+					img.dataset.category = getCategoryFromSrc(src);
+				}
+			});
+
+			function applyFilter(filter) {
+				headings.forEach(h => h.classList.toggle('active', (h.dataset.filter || '') === filter));
+				rows.forEach(row => {
+					const rimgs = row.querySelectorAll('img');
+					let show = filter === 'all';
+					if (!show) {
+						for (const im of rimgs) {
+							if ((im.dataset.category || '') === filter) { show = true; break; }
+						}
+					}
+					row.style.display = show ? '' : 'none';
+				});
+			}
+
+			headings.forEach(h => {
+				h.addEventListener('click', () => applyFilter(h.dataset.filter || 'all'));
+			});
+
+			// Default to 'All'
+			const defaultHeading = document.querySelector('#portfolio .filter-heading[data-filter="all"]');
+			if (defaultHeading) defaultHeading.classList.add('active');
+			applyFilter('all');
+		});
+	</script>
 </body>
+
 </html>
