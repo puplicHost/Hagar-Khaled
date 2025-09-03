@@ -933,25 +933,42 @@
 			<div class="section-heading text-center">
 				<h2><i class="fas fa-file-alt"></i> Portfolio</h2>
 			</div>
-			<div class="portfolio-filters" aria-label="Portfolio filters">
-				<h3 class="inner-heading filter-heading" data-filter="all"><i class="fas fa-layer-group"></i> All</h3>
-				<h3 class="inner-heading filter-heading" data-filter="cosmetics">Cosmetics</h3>
-				<h3 class="inner-heading filter-heading" data-filter="clothing">Clothing</h3>
-				<h3 class="inner-heading filter-heading" data-filter="article">Article</h3>
-				<h3 class="inner-heading filter-heading" data-filter="marketing">Marketing</h3>
-				<h3 class="inner-heading filter-heading" data-filter="medical">Medical</h3>
-			</div>
+
+	
 
 
 			<div class="container">
+				<style>
+					/* Keep original portfolio content visible and style as cards */
+					#portfolio .container:not(.portfolio-cards-container) { display: grid !important; grid-template-columns: 1fr; gap: 22px; }
+					#portfolio .container:not(.portfolio-cards-container) .row { margin: 0; }
+					#portfolio .container:not(.portfolio-cards-container) .row > .col-md-12 { display: flex; gap: 12px; align-items: flex-start; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius-lg); box-shadow: 0 12px 28px var(--shadow-color); padding: 18px; }
+					#portfolio .container:not(.portfolio-cards-container) .row > .col-md-12 > br { display: none; }
+					#portfolio .container:not(.portfolio-cards-container) img { flex: 0 0 340px; max-width: 340px; max-height: 240px; height: 100%; object-fit: cover; border-radius: 12px; display: block; }
+					#portfolio .container:not(.portfolio-cards-container) p { margin: 0; flex: 1 1 auto; color: var(--text-light); line-height: 1.8; }
+					#portfolio .container:not(.portfolio-cards-container) h1 { font-size: 24px; font-weight: 800; color: var(--text-dark); margin: 12px 0; display: inline-flex; align-items: center; gap: 8px; }
+					#portfolio .container:not(.portfolio-cards-container) h1::before { content: ''; width: 6px; height: 18px; border-radius: 3px; background: linear-gradient(180deg, var(--primary-color), var(--accent-color)); box-shadow: 0 4px 10px var(--shadow-color); }
+					#portfolio .container:not(.portfolio-cards-container) button { border: 0; border-radius: 999px; padding: 12px 18px; background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); color: #fff; box-shadow: 0 6px 16px rgba(0,0,0,.25); font-weight: 700; }
+					#portfolio .container:not(.portfolio-cards-container) button a { color: #fff; text-decoration: none; }
+					@media (max-width: 768px) {
+					#portfolio .container:not(.portfolio-cards-container) .row > .col-md-12 { flex-direction: column; align-items: stretch; gap: 12px; }
+					#portfolio .container:not(.portfolio-cards-container) img { max-width: 100%; max-height: 260px; height: auto !important; }
+					#portfolio .container:not(.portfolio-cards-container) p { max-height: none !important; overflow: visible !important; white-space: normal !important; display: block; }
+					}
+				</style>
+				<h1>Cosmetics</h1>
+				<br>
 				<div class="row">
 					<div class="col-md-12">
 
-						<img src="assets/images/portfolio/Cosmetics/1.png" alt="من النهاردة مش هتتأخري علي مواعيدك من تاني ولا يومك المميز تقضية في الكوافير  🙁
+						<img src="assets/images/portfolio/Cosmetics/1.png" alt="">
+						<br>
+<p>
+						من النهاردة مش هتتأخري علي مواعيدك من تاني ولا يومك المميز تقضية في الكوافير  🙁
 HaskinHub⌚هيحللك كل مشاكلك 
 
 النتيجة الأفضل في وقت قياسي
-">
+</p>
 
 					</div>
 
@@ -961,13 +978,15 @@ HaskinHub⌚هيحللك كل مشاكلك
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Cosmetics/2.png" alt="
-مش لازم علشان تختاري مظهر كويس لشعرك إنك تهلكية مكاوي وسيشوار 😟
+
+">
+<p>
+	مش لازم علشان تختاري مظهر كويس لشعرك إنك تهلكية مكاوي وسيشوار 😟
  ولا إنك تتنازلي عن الاستايل الي نفسك فيه 
 HaskinHub جمعتلك الاتنين
 
 صحة شعرك معانا في أمان
-">
-
+</p>
 					</div>
 
 
@@ -977,86 +996,60 @@ HaskinHub جمعتلك الاتنين
 
 						<img src="assets/images/portfolio/Cosmetics/3.png" alt="
 
-مش محتاجة حجوزات ولا وانتظار بالاسابيع علشان توصلي للراحة و الشكل المثالي الي بتحلمي بيه 😊
+
+
+">
+<p>
+	مش محتاجة حجوزات ولا وانتظار بالاسابيع علشان توصلي للراحة و الشكل المثالي الي بتحلمي بيه 😊
 معانا شعرك في آمان
-
-">
-
-					</div>
-
-
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-
-						<img src="assets/images/portfolio/Cosmetics/4.png" alt="
-
-فاكرة لما اتقالك نفسي شعري يبقي زي شعرك 🤔
-و للأسف دلوقتي شعرك مش زي زمان بسبب تأثيرات الصوديوم و المواد المضره و نقص الفيتامينات و غيرها من العوامل المؤثرة علي شعرك 
-
-HaskinHub هترجع شعرك زي الاول واحسن
-
-
-">
+</p>
 
 					</div>
 
 
 				</div>
 
+				<br><br>
+				<button><a href="https://docs.google.com/document/d/15cs1RDP2r6m37f84SDecvXkDjhsm4hEFXqZcda28jZA/edit?usp=drivesdk">load more</a></button>
+				<br>
+<h1>Clothing</h1>
+<br>
+<br>
 				<div class="row">
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Clothing/1.png" alt="
+
+
+">
+<p>
 
 يا ليلة العيد انيستينا 🎉🎊
 ليلة العيد مرتبطة دايما معانا بأيام زمان و لبس العيد الي كان لازم يبقي قدنا مرتين تلاته علشان يعيش معانا 
 
 احكولنا عن ذكرياتكم مع لبس العيد 
 و الامهات الجداد يا تري بتعملوا كدا في ولادكم زي ما كان بيتعمل فيكم
-
-">
-
-					</div>
-
-
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-
-						<img src="assets/images/portfolio/Clothing/2.png" alt="
-الشتا هتدخل علينا و هنبدأ نتقل للأولاد 🤦🏼‍♀
-
-دايما بتدوري علي جاكت يبقي تقيل و يدفي و يبقي كمان مبطن و شيك يمشي معاه مدرسه او دروس و خروج و بتحسي إنه صعب تلاقي جاكت بالمواصفات دي 🧐
-
-جبنالك الجاكت إللي بتدوري عليه بيدفى لأنه مبطن من الداخل فرو بالكامل يعنى هتبقى مطمنه على اولادك 💪🏻😎
-
-1⃣ المقاسات: من ٦ سنين ل ١٦ سنة
-2⃣الالوان: اسود _زيتى _ رمادى _نبيتى
-3⃣التوصيل خلال ٢٤ ساعه🤩
-
-و خلى بالك المنتج بيوصل لحضرتك زى ما طلبيتيه بالظبط بدون اى اختلاف و تقدرى المنتج و يقدروا الاولاد يقيسوه فى وجود المندوب و لو فى مشاكله نبدله لحضرتك بدوى اى مشاكل😌
-
-💡لطلب الجاكيت ابعتلنا على رسائل الصفحه😉
-
-
-">
+</p>
 
 					</div>
 
 
 				</div>
+				
 				<div class="row">
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Clothing/3.png" alt="
-اللبس مش بالعدد ف الاخر بنلبس قطعتين او تلاته لما تيجي تختارى، اختارى القطعه اللى تريحك😌
+
+
+">
+<p>
+	اللبس مش بالعدد ف الاخر بنلبس قطعتين او تلاته لما تيجي تختارى، اختارى القطعه اللى تريحك😌
 
  علشان كده lukakuجابتلك السلوبيت بنطلون مش بس كده السلوبيت بنطلون ممكن نفصلوا و يتلبس بنطلون لوحده🤩🙈
 
 السلوبيت رجع من تاني يلا ابدؤا  الحجز معانا
-
-">
+</p>
 
 					</div>
 
@@ -1066,22 +1059,33 @@ HaskinHub هترجع شعرك زي الاول واحسن
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Clothing/4.png" alt="
-فلوسك بتروح في الهوا 💸
-كام مرة جبتي اوردر لاولادك و اتدبستي فيه ولما حبيتي ترجعيه او تبدلي المقاس اتهربوا منك و عملولك بلوك ⁦☹️⁩
-لان هما كان هدفهم البيع وبس لكن إحنا في  lukaku  فريق متكامل بنتابع معاكي وصول الاوردر و كمان رأيك بعد ما تستلميه
 
 
 ">
+<p>
+	فلوسك بتروح في الهوا 💸
+كام مرة جبتي اوردر لاولادك و اتدبستي فيه ولما حبيتي ترجعيه او تبدلي المقاس اتهربوا منك و عملولك بلوك ⁦☹️⁩
+لان هما كان هدفهم البيع وبس لكن إحنا في  lukaku  فريق متكامل بنتابع معاكي وصول الاوردر و كمان رأيك بعد ما تستلميه
+
+</p>
 
 					</div>
 
 
 				</div>
+				<br>
+				<button><a href="https://docs.google.com/document/d/1P3TfmYTaVItAqPlslw6I6maKnFkHnUHXp3GFIH83kko
+/edit?usp=drivesdk">load more</a></button>
+				<br>
+				<h1>Article</h1>
+				<br>
 				<div class="row">
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Article/1.png" alt="
-هل الحب بيبدأ من العقل ولا من قلب ؟ وانهي فيهم اصح ؟ 
+">
+<p>
+	هل الحب بيبدأ من العقل ولا من قلب ؟ وانهي فيهم اصح ؟ 
  هل بنحب بختيارنا و لا قلبنا الي بيختار و احنا بنمشي وراه ؟ 🤔
 
 
@@ -1104,10 +1108,7 @@ HaskinHub هترجع شعرك زي الاول واحسن
 و هو يقول ( بقت زنانة  و نكدية ، طول الوقت عايزة هدايا و فسخ مش مقدرة ان عندي شغل و مسؤلية ، عايزة تكمل شغل و مش مهتمية ببيتها )
 
 #رحلة_التغيير_تبدأ_من_الآن
-
-
-
-">
+</p>
 
 					</div>
 
@@ -1117,7 +1118,9 @@ HaskinHub هترجع شعرك زي الاول واحسن
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Article/2.png" alt="
-بيجلنا اسئلة كتير زي ⁦⬇️⁩⁦⬇️⁩
+">
+<p>
+	بيجلنا اسئلة كتير زي ⁦⬇️⁩⁦⬇️⁩
 
 هل لو سألته عن المرتب و أن يكون ليا مصروف شخصي او اني عايزاه هو الي يكون مسؤل مسؤلية كاملة عن المصاريف في بداية التعارف
 او 
@@ -1152,17 +1155,22 @@ HaskinHub هترجع شعرك زي الاول واحسن
 
 #رحلة_التغيير_تبدأ_من_الآن
 
-">
+
+</p>
 
 					</div>
 
 
 				</div>
+
 							<div class="row">
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Article/3.png" alt="
-الزوجات الحزينة او التعيسة في حياتها بتستغرب ان ازواجهم مبيحاولوش يبذلوا مجهود و يطلعوهم من المود ده علشان يكونوا مبسوطين 🤔
+
+">
+<p>
+	الزوجات الحزينة او التعيسة في حياتها بتستغرب ان ازواجهم مبيحاولوش يبذلوا مجهود و يطلعوهم من المود ده علشان يكونوا مبسوطين 🤔
 علي الصعيد الاخر 
 بنلاقي ان السيدات السعيدة ازواجهم بيسعدوهم اكتر و اكتر مع انهم في الأساس سعداء🙄
 لية بقي ؟؟؟؟ 
@@ -1181,62 +1189,57 @@ HaskinHub هترجع شعرك زي الاول واحسن
 #رحلة_التغيير_تبدأ_من_الآن
 
 
-">
+</p>
 
 					</div>
 
 
 				</div>
-							<div class="row">
-					<div class="col-md-12">
+								<br>
+							<button><a href="https://docs.google.com/document/d/1Fi5wpIP8ym7nHmyqrxzHwbbqFT4FiODURIb9KyC41J
+8/edit?usp=drivesdk">load more</a></button>
 
-						<img src="assets/images/portfolio/Marketing/1.png" alt="">
+				<br>
+	<h1>Marketing</h1>
+	<br>
+	<style>
+	/* Marketing grid: 3 per row on desktop, full width on mobile; images fully visible */
+	#portfolio .marketing-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+	#portfolio .marketing-grid > .col { flex: 0 0 calc(33.333% - 8px); max-width: calc(33.333% - 8px); }
+	#portfolio .marketing-grid img.marketing-img { width: 100%; height: auto; object-fit: contain; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 6px 18px var(--shadow-color); background: #fff; }
+	@media (max-width: 768px) {
+	#portfolio .marketing-grid > .col { flex: 0 0 100%; max-width: 100%; }
+	}
+	</style>
+	<div class="row marketing-grid">
+	<div class="col">
+	<img class="marketing-img" src="assets/images/portfolio/Marketing/1.png" alt="">
+	</div>
+	<div class="col">
+	<img class="marketing-img" src="assets/images/portfolio/Marketing/2.png" alt="">
+	</div>
+	<div class="col">
+	<img class="marketing-img" src="assets/images/portfolio/Marketing/3.png" alt="">
+	</div>
+	
+	
 
-					</div>
-				</div>
-							<div class="row">
-					<div class="col-md-12">
+	</div>
+	<br>
+	<button><a href="https://docs.google.com/document/d/1JqBobY5aJdSf1hr6xDOEAJQfokLj8mtqOzWRnly6Fis/
+	edit?usp=drivesdk"></a>load more</button>
+	
+	<br>
+	<h1>Medical</h1>
 
-						<img src="assets/images/portfolio/Marketing/2.png" alt="">
-
-					</div>
-				</div>
-							<div class="row">
-					<div class="col-md-12">
-
-						<img src="assets/images/portfolio/Marketing/3.png" alt="">
-
-					</div>
-				</div>
-							<div class="row">
-					<div class="col-md-12">
-
-						<img src="assets/images/portfolio/Marketing/4.png" alt="">
-
-					</div>
-				</div>
-							<div class="row">
-					<div class="col-md-12">
-
-						<img src="assets/images/portfolio/Marketing/5.png" alt="">
-
-					</div>
-				</div>
-							<div class="row">
-					<div class="col-md-12">
-
-						<img src="assets/images/portfolio/Marketing/6.png" alt="">
-
-					</div>
-				</div>
 						<div class="row">
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Medical/1.png" alt="
-						
-						
-
-اورام الرحم الليفية ممكن تسببلك مشاكل كتير 😔
+			
+						">
+						<p>
+							اورام الرحم الليفية ممكن تسببلك مشاكل كتير 😔
 
 منها تأخر الإنجاب و الإجهاض المتكرر او الولادة المبكرة الأعراض المصاحبة للمرض تقدر تزود فرص علاجك بشكل اسرع 
 
@@ -1262,8 +1265,7 @@ HaskinHub هترجع شعرك زي الاول واحسن
 📌العنوان : ديروط - برج البنزايون 
 #مركز_النيل_للأشعة
 
-						
-						">
+						</p>
 
 					</div>
 				</div>
@@ -1272,7 +1274,10 @@ HaskinHub هترجع شعرك زي الاول واحسن
 
 						<img src="assets/images/portfolio/Medical/2.png" alt="
 						
-							الفقرات العنقية : 
+		
+						">
+						<p>
+														الفقرات العنقية : 
 مشاكل فقرات الرقبة او الفقرات العنقية ممكن تسببلك ألم شديد و تمنعك عن ممارسة حياتك بشكل طبيعي
 و ممكن تتطور بأنها تضغط علي الأعصاب فتؤدي لمشاكل أكبر واصعب 
 
@@ -1296,8 +1301,8 @@ HaskinHub هترجع شعرك زي الاول واحسن
 #مركز_النيل_للأشعة
 #صحتك_مسؤليتنا
 #دمتم_سالمين
-		
-						">
+
+						</p>
 
 					</div>
 				</div>
@@ -1305,7 +1310,10 @@ HaskinHub هترجع شعرك زي الاول واحسن
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Medical/3.png" alt="
-						المشاكل التي تصيب المخ و تتسبب بضرر في الأنسجة 
+				
+						">
+						<p>
+													المشاكل التي تصيب المخ و تتسبب بضرر في الأنسجة 
 هي امراض دقيقة جدا يصعب تشخيصها و السيطرة عليها 
 يعاني مريضها من العديد من الأعراض المؤلمة التي تبدو في نظرة غير مبررة 
 
@@ -1319,9 +1327,7 @@ HaskinHub هترجع شعرك زي الاول واحسن
 - 01090829744
 - 0884780011
 📌العنوان : ديروط - مصر والسودان
-
-									
-						">
+						</p>
 
 					</div>
 				</div>
@@ -1329,7 +1335,12 @@ HaskinHub هترجع شعرك زي الاول واحسن
 					<div class="col-md-12">
 
 						<img src="assets/images/portfolio/Medical/4.png" alt="
-						ارتفاع ضغط الدم هو اول مؤشر لوجود خلل ما بوظيفة الكلى : 
+
+
+									
+						">
+						<p>
+													ارتفاع ضغط الدم هو اول مؤشر لوجود خلل ما بوظيفة الكلى : 
 ضغط الدم المرتفع يسبب الضرر بالأوعية الدموية 
 و خلل بوظيفة الكلى في تصفية السموم من الدم مما يؤدي الي الفشل الكلوى 
 
@@ -1343,13 +1354,13 @@ HaskinHub هترجع شعرك زي الاول واحسن
 - 01090829744
 - 0884780011
 📌العنوان : ديروط - مصر والسودان
-
-									
-						">
+						</p>
 
 					</div>
 				</div>
-				
+				<br>
+				<button><a href="https://docs.google.com/document/d/1Im1LmulT1WRIniMaHCmhq9WM9AgEMcM8X3poRc2
+1hhc/edit?usp=drivesdk">load more</a></button>
 				
 
 			</div>
@@ -1407,130 +1418,7 @@ HaskinHub هترجع شعرك زي الاول واحسن
 			}
 		});
 	</script>
-	<script>
-		(function () {
-			const OFFSET = 14;
 
-			function createTooltip(text) {
-				const el = document.createElement('div');
-				el.className = 'img-tooltip';
-				el.textContent = text;
-				el.setAttribute('dir', 'auto');
-
-				// Enlarge width for longer texts by adding variant classes
-				const len = text.replace(/\s+/g, ' ').trim().length;
-				if (len > 220) {
-					el.classList.add('img-tooltip--xwide');
-				} else if (len > 120) {
-					el.classList.add('img-tooltip--wide');
-				}
-
-				document.body.appendChild(el);
-				return el;
-			}
-
-			function positionTooltip(el, evt) {
-				// Center the popup in the viewport
-				el.style.left = '50%';
-				el.style.top = '50%';
-				el.style.transform = 'translate(-50%, -50%)';
-			}
-
-			document.addEventListener('DOMContentLoaded', function () {
-				const imgs = document.querySelectorAll('#portfolio img[alt]');
-				imgs.forEach(function (img) {
-					let tip = null;
-
-					img.addEventListener('mouseenter', function (e) {
-						const text = (img.getAttribute('alt') || '').trim();
-						if (!text) return;
-						tip = createTooltip(text);
-						positionTooltip(tip, e);
-					});
-
-					img.addEventListener('mousemove', function (e) {
-						if (tip) positionTooltip(tip, e);
-					});
-
-					img.addEventListener('mouseleave', function () {
-						if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
-						tip = null;
-					});
-
-					// Touch support
-					img.addEventListener('touchstart', function (e) {
-						const text = (img.getAttribute('alt') || '').trim();
-						if (!text) return;
-						tip = createTooltip(text);
-						const t = e.touches[0];
-						positionTooltip(tip, { clientX: t.clientX, clientY: t.clientY });
-					}, { passive: true });
-
-					img.addEventListener('touchmove', function (e) {
-						if (!tip) return;
-						const t = e.touches[0];
-						positionTooltip(tip, { clientX: t.clientX, clientY: t.clientY });
-					}, { passive: true });
-
-					img.addEventListener('touchend', function () {
-						if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
-						tip = null;
-					});
-
-					img.addEventListener('touchcancel', function () {
-						if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
-						tip = null;
-					});
-				});
-			});
-		})();
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const headings = document.querySelectorAll('#portfolio .filter-heading');
-			const rows = document.querySelectorAll('#portfolio .container .row');
-			const imgs = document.querySelectorAll('#portfolio .container img');
-
-			function getCategoryFromSrc(src) {
-				try {
-					const parts = src.split('/');
-					const idx = parts.lastIndexOf('portfolio');
-					if (idx !== -1 && parts[idx + 1]) return parts[idx + 1].toLowerCase();
-					return (parts[parts.length - 2] || '').toLowerCase();
-				} catch (e) { return ''; }
-			}
-
-			imgs.forEach(img => {
-				if (!img.dataset.category) {
-					const src = img.getAttribute('src') || '';
-					img.dataset.category = getCategoryFromSrc(src);
-				}
-			});
-
-			function applyFilter(filter) {
-				headings.forEach(h => h.classList.toggle('active', (h.dataset.filter || '') === filter));
-				rows.forEach(row => {
-					const rimgs = row.querySelectorAll('img');
-					let show = filter === 'all';
-					if (!show) {
-						for (const im of rimgs) {
-							if ((im.dataset.category || '') === filter) { show = true; break; }
-						}
-					}
-					row.style.display = show ? '' : 'none';
-				});
-			}
-
-			headings.forEach(h => {
-				h.addEventListener('click', () => applyFilter(h.dataset.filter || 'all'));
-			});
-
-			// Default to 'All'
-			const defaultHeading = document.querySelector('#portfolio .filter-heading[data-filter="all"]');
-			if (defaultHeading) defaultHeading.classList.add('active');
-			applyFilter('all');
-		});
-	</script>
 </body>
 
 </html>
